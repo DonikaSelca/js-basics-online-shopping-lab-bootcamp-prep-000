@@ -10,15 +10,20 @@ function setCart(c) {
 }
 
 function addToCart(item) {
-  var thing = {
-    itemName: "",
-    itemPrice: Number
+  var completeItem = {
+    itemName: item,
+    itemPrice: 0
   };
-  return thing;
+  completeItem.itemPrice = Math.floor(Math.random() * 100)
+  cart.push(completeItem);
+  return `${completeItem.itemName} has been added to your cart.`
 }
 
 function viewCart() {
-  // write your code here
+  var completeString = "In your cart, you have "; 
+  for(var i = 0; i < carts.length; i++) {
+    
+  }
 }
 
 function total() {
